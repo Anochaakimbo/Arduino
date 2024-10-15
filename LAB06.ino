@@ -17,7 +17,7 @@ const char* client_id = "ESP8266Client";
 // กำหนดหัวข้อ MQTT
 const char* topic1 = "หัวช้อ MQTT";
 // รหัส4ตัวท้าย
-const char* client_id = "0955";
+const char* client_id = "1936";
 const int triggerPin = D1; 
 const int echoPin = D2;    
 
@@ -68,7 +68,7 @@ void loop() {
   char msg[10];
   sprintf(msg, "%ld", distance);
   // รหัส4ตัวท้าย
-  client.publish("0955", msg);
+  client.publish("1936", msg);
   delay(1000); 
 }
 
