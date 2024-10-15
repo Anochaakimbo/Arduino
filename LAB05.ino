@@ -1,21 +1,26 @@
+//663380193-6
+//663380149-9
+//663380147-3
+//653380372-9
+//663380492-6
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
 
 // กำหนดข้อมูลการเชื่อมต่อ WiFi
-const char* ssid = "ชื่อ WiFi";
-const char* password = "รหัส WiFi";
+const char* ssid = "ssid";
+const char* password = "pass";
 
 // กำหนดข้อมูล MQTT Broker
-const char* mqtt_server = "MQTT broker ip";
+const char* mqtt_server = "mqtt-dashboard.com";
 const int mqtt_port = 1883;
-const char* mqtt_username = "ชื่อผู้ใช้ MQTT";
-const char* mqtt_password = "รหัสผ่าน MQTT";
+const char* mqtt_username = "1936";
+const char* mqtt_password = "";
 
 // กำหนดชื่อ client
 const char* client_id = "ESP8266Client";
 
 // กำหนดหัวข้อ MQTT
-const char* topic1 = "หัวช้อ MQTT";
+const char* topic1 = "lab5";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -56,8 +61,9 @@ void loop() {
     reconnect();
   }
 
-  client.publish(topic1, "1058 สุดหล่อเท่ห์");
+  client.publish(topic1, "1936 \n 3729 \n 4926 \n 1499 \n 1473");
   Serial.println("Message send completly");
 
   delay(1000);
 }
+
