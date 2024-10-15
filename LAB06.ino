@@ -2,14 +2,14 @@
 #include <PubSubClient.h>
 
 // กำหนดข้อมูลการเชื่อมต่อ WiFi
-const char* ssid = "ชื่อ WiFi";
-const char* password = "รหัส WiFi";
+const char* ssid = "ssid";
+const char* password = "pass";
 
 // กำหนดข้อมูล MQTT Broker
 const char* mqtt_server = "MQTT broker ip";
 const int mqtt_port = 1883;
-const char* mqtt_username = "ชื่อผู้ใช้ MQTT";
-const char* mqtt_password = "รหัสผ่าน MQTT";
+const char* mqtt_username = "1936";
+const char* mqtt_password = "";
 
 // กำหนดชื่อ client
 const char* client_id = "ESP8266Client";
