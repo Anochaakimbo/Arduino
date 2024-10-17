@@ -75,7 +75,7 @@ void loop() {
     Serial.println(distance);
     
     char msg[10];
-    sprintf(msg, "%ld", distance);
+    sprintf(msg, "1936 distance is: %ld", distance);
     client.publish(topic1, msg);
   } else {
     Serial.println("Error");
